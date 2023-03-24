@@ -93,6 +93,51 @@
             <img src="images/user.jpg" />
           </div>
         </div>
+
+        <!-- cards -->
+        <div class="cardBox">
+          <div class="card">
+            <div>
+              <div class="numbers">1,504</div>
+              <div class="cardname">Views Diária</div>
+            </div>
+            <div class="iconBx">
+              <ion-icon name="eye-outline"></ion-icon>
+            </div>
+          </div>
+
+          <div class="card">
+            <div>
+              <div class="numbers">90</div>
+              <div class="cardname">Vendas</div>
+            </div>
+            <div class="iconBx">
+              <ion-icon name="cart-outline"></ion-icon>
+            </div>
+          </div>
+
+          <div class="card">
+            <div>
+              <div class="numbers">310</div>
+              <div class="cardname">Comentários</div>
+            </div>
+            <div class="iconBx">
+              <ion-icon name="chatbubbles-outline"></ion-icon>
+            </div>
+          </div>
+
+          <div class="card">
+            <div>
+              <div class="numbers">$16.504</div>
+              <div class="cardname">Ganhos</div>
+            </div>
+
+            <div class="iconBx">
+              <ion-icon name="cash-outline"></ion-icon>
+            </div>
+          </div>
+        
+        </div>
       </div>
     </div>
 
@@ -106,14 +151,13 @@
     ></script>
     <script>
       //MenuToggle
-      let toggle = document.querySelector('.toogle');
-      let navigation = document.querySelector('.navigation');
-      let main = document.querySelector('.main');
-      toggle.onclick = function(){
-        navigation.classList.toggle('active');
-        main.classList.toggle('active');
-      }
-
+      let toggle = document.querySelector(".toogle");
+      let navigation = document.querySelector(".navigation");
+      let main = document.querySelector(".main");
+      toggle.onclick = function () {
+        navigation.classList.toggle("active");
+        main.classList.toggle("active");
+      };
 
       // adicionando a class hovered no menu selecionado
       let list = document.querySelectorAll(".navigation ul li");
