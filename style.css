@@ -227,7 +227,7 @@ body {
     width: 100%;
     padding: 20px;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(180px,1fr));
     gap: 30px;
 }
 
@@ -249,5 +249,39 @@ body {
     color: var(--blue);
 }
 
+.cardBox .card .cardName {
+    color: var(--black2);
+    font-size: 1.1em;
+    margin-top: 5px;
+}
+
+.cardBox .card .iconBx {
+    font-size: 3.5em;
+    color: var(--black2);
+}
+
+.cardBox .card:hover {
+    background: var(--blue);
+}
+
+.cardBox .card:hover .numbers,
+.cardBox .card:hover .cardName,
+.cardBox .card:hover .iconBx
+{
+    color: var(--white);
+}
+
 
 /* cardbox end */
+
+
+
+@media screen and (max-width: 1100px){
+    .cardBox .card .numbers {
+        font-size: 2em;
+    }
+
+    .cardBox .card .iconBx {
+        font-size: 3em;
+    }
+}
